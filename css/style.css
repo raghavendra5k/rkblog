@@ -145,7 +145,7 @@ body #about-section .about p {
   font-family: "Courier New", Courier, monospace;
 }
 body #contact {
-  position: relative;
+  position: static;
 }
 body #contact h1 {
   font-size: 3.8rem;
