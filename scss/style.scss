@@ -1,0 +1,402 @@
+body {
+    // navigation menu
+    .nav-bar {
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        font-size: 20px;
+        display: flex;
+        overflow: hidden;
+        opacity: 0.6;
+        .logo-hamburger {
+            .logo {
+                height: 60px;
+                width: 80px;
+                cursor: pointer;
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+        .hr {
+            display: none;
+        }
+        .menuSearch {
+            display: flex;
+            width: 100%;
+            #menu {
+                display: flex;
+                margin: 9px;
+                li {
+                    a {
+                        padding: 10px;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        font-family: "Courier New", Courier, monospace;
+                        display: block;
+                    }
+                    a:hover {
+                        color: black;
+                        background-color: white;
+                        border-radius: 20px;
+                    }
+                }
+            }
+            .navbar-right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                input {
+                    font-size: 20px;
+                    font-family: "Courier New", Courier, monospace;
+                    width: 100%;
+                }
+                button {
+                    font-size: 20px;
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                    border: 1px solid white;
+                    font-family: "Courier New", Courier, monospace;
+                }
+            }
+        }
+    }
+
+    // container
+    // #container {
+    // Home Section
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 210px 100px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 40px;
+        height: 163px;
+        h1 {
+            font-size: 3.8em;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+    }
+    #home::before {
+        content: "";
+        background: url("../images/bg2.jpg") no-repeat center center/cover;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        top: 0;
+        height: 642px;
+    }
+    // }
+    #articles-container {
+        h1 {
+            font-size: 3.8rem;
+            padding: 12px;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+        #articles {
+            display: flex;
+            margin: 30px;
+            .box {
+                border: 2px solid brown;
+                padding: 12px;
+                margin: 3px 6px;
+                border-radius: 23px;
+                background: #f2f2f2;
+                cursor: pointer;
+                img {
+                    height: 160px;
+                    display: block;
+                    margin: auto;
+                }
+                h2 {
+                    font-size: 2.3rem;
+                    padding: 12px;
+                    text-align: center;
+                    font-family: "Courier New", Courier, monospace;
+                }
+                p {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-family: "Courier New", Courier, monospace;
+                }
+            }
+        }
+    }
+
+    #about-section {
+        // border-radius: 23px;
+        // background: #f2f2f2;
+        // margin: 30px;
+        // padding: 30px;
+        h1 {
+            font-size: 3.8rem;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .about {
+            margin: 30px;
+        padding: 30px;
+            //margin: 15px 40px;
+            border-radius: 23px;
+        background: #f2f2f2;
+            p {
+                font-size: 1.5rem;
+                font-family: "Courier New", Courier, monospace;
+            }
+        }
+    }
+
+    #contact{
+        position: relative;
+        h1{
+            font-size: 3.8rem;
+            padding: 12px;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 34px;
+            form{
+                width: 40%;
+                .form-group{
+                    label{
+                        font-size: 1.5rem;
+                        font-family: "Courier New", Courier, monospace;
+                    }
+                    input{
+                        width: 96%;
+                        padding: 0.5rem;
+                        font-size: 1.3rem;
+                        font-family: "Courier New", Courier, monospace;
+                    }
+                    textarea{
+                        width: 96%;
+                        padding: 0.5rem;
+                        font-size: 1.3rem;
+                        font-family: "Courier New", Courier, monospace;
+                    }
+                    button{
+                        padding: 0.5rem;
+                        font-size: 1.3rem;
+                        font-family: "Courier New", Courier, monospace;
+                        display: block;
+                        margin: 0 auto ;
+                    }
+                }
+            }
+        }
+    }
+
+    #contact::before{
+        content: "";
+        background: url("/images/contact.jpg") no-repeat center center/cover;
+        position: absolute;
+        z-index: -1;
+        width:100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+
+    // footer
+    .footer {
+        background-color: black;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        p {
+            font-size: 20px;
+            font-family: "Courier New", Courier, monospace;
+            color: white;
+        }
+        .social-media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                height: 22px;
+                width: 28px;
+                margin: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        .nav-bar {
+            flex-direction: column;
+            height: auto;
+            position: absolute;
+            .logo-hamburger {
+                display: flex;
+                img {
+                    height: 60px;
+                    width: 80px;
+                    cursor: pointer;
+                }
+                .hamburger {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+            .hr {
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
+            .menuSearch {
+                flex-direction: column;
+                display: none;
+                #menu {
+                    display: flex;
+                    margin-right: auto;
+                    flex-direction: column;
+                }
+                .navbar-right {
+                    margin: 5px 17px;
+                    flex-wrap: wrap;
+
+                    input {
+                        width: auto;
+                        overflow: auto;
+                    }
+                }
+            }
+
+            .menuSearch-active {
+                display: flex;
+            }
+        }
+        // #container {
+        // Home Section
+
+        #home {
+            flex-direction: column;
+            text-align: center;
+            display: flex;
+            padding: 0px;
+            // height: 481px;
+            height: 401px;
+            justify-content: center;
+            margin-bottom: 0px;
+            h1 {
+                font-size: 26px;
+                color: white;
+            }
+            p {
+                font-size: 15px;
+                color: white;
+            }
+        }
+        #home::before {
+            content: "";
+            background: url("../images/bg2.jpg") no-repeat center center/cover;
+            width: 100%;
+            // height: 480px;
+            height: 400px;
+            position: absolute;
+            z-index: -1;
+            background-size: cover;
+            top: 0;
+        }
+
+        #articles-container{
+            margin:18px;
+            h1{
+                font-size: 26px;
+            }
+            #articles{
+                flex-direction: column;
+                margin: 10px;
+                .box{
+                    margin:6px;
+                    padding: 7px;
+                    img{
+                        height: 80px;
+                    }
+                    h2{
+                        font-size: 21px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        #about-section{
+            padding: 0;
+            h1{
+                font-size: 26px;
+                padding: 12px;
+            }
+            .about{
+                margin: 10px 30px;
+                padding: 10px;
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+
+        #contact{
+            h1{
+                font-size: 26px;
+                padding: 12px;
+            }
+            #contact-box{
+                padding: 10px 32px;
+                form{
+                    width: 100%;
+                    text-align: center;
+                    .form-group{
+                        margin-bottom: 12px;
+                        label{
+                            display: block;
+                            font-size: 15px;
+                        }
+                        input{
+                            width:80%;
+                            font-size: 15px;
+                        }
+                        textarea{
+                            width:80%;
+                            font-size: 15px;
+                        }
+                        button{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer{
+            height: auto;
+        }
+    }
+}

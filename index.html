@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/javascript.js"></script>
+    <title>Welcome to rCoder</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo-hamburger">
+            <img src="/images/rk.jpg" alt="logo" class="logo">
+            <img src="/images/hamburger.jpg" class="hamburger" onclick="myFunction()">
+        </div>
+        <hr class="hr">
+        <div class="menuSearch">
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="navbar-right">
+                <input type="text" placeholder="Search">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to my technology blog</h1>
+        <p>One of the best place to learn web development</p>
+        <p>Come lets learn together</p>
+    </section>
+
+    <section id="articles-container">
+        <h1>Articles</h1>
+        <div id="articles">
+            <div class="box">
+                <img src="/images/angular.png" alt="image">
+                <h2>Article on angular</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, minima!</p>
+            </div>
+            <div class="box">
+                <img src="/images/react.png" alt="image">
+                <h2>Article on React js</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, minima!</p>
+            </div>
+            <div class="box">
+                <img src="/images/vue.png" alt="image">
+                <h2>Article on Vue Js</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, minima!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <h1>About</h1>
+        <div class="about">
+            <p>This is Raghavendra Kulakarni, a is passionate Web developer graduated from one of the prestigious
+                college and worked for fortune 500 companies as a Front end developer.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="text" id="phone" class="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="messege" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                   <button type="submit">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2020-2021 rCoder.com</p>
+        <div class="social-media">
+            <img src="/images/twitter.png" alt="twitter logo">
+            <img src="/images/facebook.jpg" alt="facebook logo">
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName('menuSearch')[0];
+            x.classList.toggle("menuSearch-active");
+        }
+    </script>
+</body>
+
+</html>

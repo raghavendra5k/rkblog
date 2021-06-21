@@ -1,0 +1,360 @@
+body .nav-bar {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  font-size: 20px;
+  display: flex;
+  overflow: hidden;
+  opacity: 0.6;
+}
+body .nav-bar .logo-hamburger .logo {
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+}
+body .nav-bar .logo-hamburger .hamburger {
+  display: none;
+}
+body .nav-bar .hr {
+  display: none;
+}
+body .nav-bar .menuSearch {
+  display: flex;
+  width: 100%;
+}
+body .nav-bar .menuSearch #menu {
+  display: flex;
+  margin: 9px;
+}
+body .nav-bar .menuSearch #menu li a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+}
+body .nav-bar .menuSearch #menu li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+}
+body .nav-bar .menuSearch .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+body .nav-bar .menuSearch .navbar-right input {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+}
+body .nav-bar .menuSearch .navbar-right button {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  font-family: "Courier New", Courier, monospace;
+}
+body #home {
+  display: flex;
+  flex-direction: column;
+  padding: 210px 100px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 40px;
+  height: 163px;
+}
+body #home h1 {
+  font-size: 3.8em;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  font-family: "Courier New", Courier, monospace;
+}
+body #home p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+body #home::before {
+  content: "";
+  background: url("../images/bg2.jpg") no-repeat center center/cover;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  top: 0;
+  height: 642px;
+}
+body #articles-container h1 {
+  font-size: 3.8rem;
+  padding: 12px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+body #articles-container #articles {
+  display: flex;
+  margin: 30px;
+}
+body #articles-container #articles .box {
+  border: 2px solid brown;
+  padding: 12px;
+  margin: 3px 6px;
+  border-radius: 23px;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+body #articles-container #articles .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+body #articles-container #articles .box h2 {
+  font-size: 2.3rem;
+  padding: 12px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+body #articles-container #articles .box p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+body #about-section h1 {
+  font-size: 3.8rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+body #about-section .about {
+  margin: 30px;
+  padding: 30px;
+  border-radius: 23px;
+  background: #f2f2f2;
+}
+body #about-section .about p {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+body #contact {
+  position: relative;
+}
+body #contact h1 {
+  font-size: 3.8rem;
+  padding: 12px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+body #contact #contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+}
+body #contact #contact-box form {
+  width: 40%;
+}
+body #contact #contact-box form .form-group label {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+body #contact #contact-box form .form-group input {
+  width: 96%;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+body #contact #contact-box form .form-group textarea {
+  width: 96%;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+body #contact #contact-box form .form-group button {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  margin: 0 auto;
+}
+body #contact::before {
+  content: "";
+  background: url("/images/contact.jpg") no-repeat center center/cover;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+body .footer {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+body .footer p {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+body .footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .footer .social-media img {
+  height: 22px;
+  width: 28px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body .nav-bar {
+    flex-direction: column;
+    height: auto;
+    position: absolute;
+  }
+  body .nav-bar .logo-hamburger {
+    display: flex;
+  }
+  body .nav-bar .logo-hamburger img {
+    height: 60px;
+    width: 80px;
+    cursor: pointer;
+  }
+  body .nav-bar .logo-hamburger .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+  body .nav-bar .hr {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  body .nav-bar .menuSearch {
+    flex-direction: column;
+    display: none;
+  }
+  body .nav-bar .menuSearch #menu {
+    display: flex;
+    margin-right: auto;
+    flex-direction: column;
+  }
+  body .nav-bar .menuSearch .navbar-right {
+    margin: 5px 17px;
+    flex-wrap: wrap;
+  }
+  body .nav-bar .menuSearch .navbar-right input {
+    width: auto;
+    overflow: auto;
+  }
+  body .nav-bar .menuSearch-active {
+    display: flex;
+  }
+  body #home {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    padding: 0px;
+    height: 401px;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  body #home h1 {
+    font-size: 26px;
+    color: white;
+  }
+  body #home p {
+    font-size: 15px;
+    color: white;
+  }
+  body #home::before {
+    content: "";
+    background: url("../images/bg2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    top: 0;
+  }
+  body #articles-container {
+    margin: 18px;
+  }
+  body #articles-container h1 {
+    font-size: 26px;
+  }
+  body #articles-container #articles {
+    flex-direction: column;
+    margin: 10px;
+  }
+  body #articles-container #articles .box {
+    margin: 6px;
+    padding: 7px;
+  }
+  body #articles-container #articles .box img {
+    height: 80px;
+  }
+  body #articles-container #articles .box h2 {
+    font-size: 21px;
+  }
+  body #articles-container #articles .box p {
+    font-size: 15px;
+  }
+  body #about-section {
+    padding: 0;
+  }
+  body #about-section h1 {
+    font-size: 26px;
+    padding: 12px;
+  }
+  body #about-section .about {
+    margin: 10px 30px;
+    padding: 10px;
+  }
+  body #about-section .about p {
+    font-size: 15px;
+  }
+  body #contact h1 {
+    font-size: 26px;
+    padding: 12px;
+  }
+  body #contact #contact-box {
+    padding: 10px 32px;
+  }
+  body #contact #contact-box form {
+    width: 100%;
+    text-align: center;
+  }
+  body #contact #contact-box form .form-group {
+    margin-bottom: 12px;
+  }
+  body #contact #contact-box form .form-group label {
+    display: block;
+    font-size: 15px;
+  }
+  body #contact #contact-box form .form-group input {
+    width: 80%;
+    font-size: 15px;
+  }
+  body #contact #contact-box form .form-group textarea {
+    width: 80%;
+    font-size: 15px;
+  }
+  body #contact #contact-box form .form-group button {
+    font-size: 15px;
+  }
+  body .footer {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
