@@ -9,6 +9,8 @@ body .nav-bar {
   display: flex;
   overflow: hidden;
   opacity: 0.6;
+  position:sticky;
+  top:0px;
 }
 body .nav-bar .logo-hamburger .logo {
   height: 60px;
